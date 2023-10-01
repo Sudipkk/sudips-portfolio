@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudip's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(18, 43, 43);
+            color: white;
+            font-family: 'Recursive', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(40, 94, 94);
+            padding: 7px 30px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .right ul li a:hover {
+            color: aqua;
+            font-size: 1.05rem;
+        }
+
+        .right ul li {
+            display: inline-block;
+            padding: 0 30px;
+
+        }
+
+        .container1 {
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 50px 250px;
+        }
+
+        .container1 .part1 {
+            font-size: 3rem;
+            margin-top: 100px;
+        }
+
+        .container1 .part1 .part1-2 {
+            font-size: 2rem;
+
+        }
+
+        .container1 .part2 img {
+            width: 300px;
+            margin-top: 100px;
+            border-radius: 1000px;
+            border: 2px solid whitesmoke;
+        }
+
+        .part1 .red {
+            color: red;
+        }
+
+        .part1-2 .html {
+            color: orange;
+        }
+
+        .part1-2 .css {
+            color: rgb(94, 223, 255);
+        }
+
+        .part1-2 .javascript {
+            color: yellow;
+        }
+
+        #element {
+            color: rgb(165, 165, 243);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 250px;
+        }
+
+        footer .left-1 img {
+            width: 150px;
+            padding: 80px 70px;
+        }
+
+        footer .right-1 img {
+            width: 300px;
+        }
+
+        footer .left-1 {
+            background-color: wheat;
+            height: 30rem;
+            width: 300px;
+            text-align: center;
+
+        }
+
+        footer .right-1 {
+            background-color: wheat;
+            height: 30rem;
+            
+        }
+
+        main hr {
+            margin: 60px;
+        }
+        /* .insta a{
+          display: flex;
+          align-items: center;
+        } */
+        .you{
+            text-align: center;
+        }
+        footer .left-1 a{
+            text-decoration: none;
+            color: rgb(216, 63, 63);
+        }
+        .you a{
+            text-decoration: none;
+            color: rgb(216, 63, 63);
+        }footer .left-1 a:hover{
+            color: red;
+        }
+        .you a:hover{
+            color: red;
+        }
+        footer .left-1 p{
+            color: black;
+        }
+        .you p{
+            color: black;
+            /* text-align: center; */
+            /* padding: 0 10px; */
+        }
+        .copyright{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: gray;
+            height: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Sudip's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="index2.html">Contact</a> </li>
+                    <li> <a href="index3.html">About</a> </li>
+                    <li> <a href="index4.html">Post</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container1">
+                <div class="part1"> Hi My Name Is <span class="red">Sudip</span>
+                    <div class="part1-2">Im Good At <span class="html">HTML</span>, <span class="css">CSS</span> And
+                        <span class="javascript">JAVA SCRIPT</span> </div>
+                    <span id="element"></span>
+                </div>
+                <div class="part2"><img src="oreki.jpg" alt="oreki image"></div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <div class="left-1"> <img src="insta.png" alt="insta image"> <a href="https://www.instagram.com/idk__9_/">InstaGram</a> <br> <br>
+                <p>Click Here For My Official instagram Account</p>
+                
+            </div>
+            <div class="right-1"> <img src="youtube.webp" alt="youtube image">
+                <div class="you">
+                    <a href="https://www.youtube.com/@noobsudipp4549">YouTube</a> <br><br><p>Click Here For My Official Youtube <br> Account</p>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <p>Copyright &copy; Reserved By Sudip's Portfolio</p>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Video Editor', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
